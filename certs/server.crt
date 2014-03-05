@@ -1,0 +1,80 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 15491924372106938183 (0xd6fe5f22fea68747)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=HR, ST=Grad Zagreb, L=Zagreb, O=NebulaDB, CN=nebuladb.io/emailAddress=info@nebuladb.io
+        Validity
+            Not Before: Feb 21 00:19:12 2014 GMT
+            Not After : Mar 23 00:19:12 2014 GMT
+        Subject: C=HR, ST=Grad Zagreb, L=Zagreb, O=NebulaDB, CN=nebuladb.io/emailAddress=info@nebuladb.io
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:d5:71:9e:6b:64:39:39:1e:4e:65:f1:86:31:8a:
+                    3f:54:2a:92:db:1d:aa:a8:10:d4:a8:d5:36:c1:c3:
+                    bb:32:1a:1b:27:72:bc:86:b5:ba:96:18:f2:4c:bc:
+                    46:ad:8b:c1:a3:fa:4d:04:e6:d9:72:00:23:34:12:
+                    d0:26:ad:49:57:d5:c4:6b:d9:9c:a6:db:dd:b6:2e:
+                    05:e0:39:d4:1c:14:b6:41:50:dc:4f:43:f5:ed:1c:
+                    be:b9:ad:ef:21:90:b4:46:22:ce:35:44:0b:31:aa:
+                    48:18:20:a3:e9:53:a1:c7:75:dc:f9:93:ff:23:e7:
+                    ce:c8:ff:2a:74:5f:58:9a:84:76:17:1d:d0:d1:da:
+                    a8:0c:db:43:aa:50:b1:8d:65:81:40:4a:92:6d:4d:
+                    fb:9e:c0:5a:08:dc:40:65:99:c6:7e:5f:2e:e1:24:
+                    e2:d1:b2:04:56:8a:c0:57:2f:a0:8d:d8:af:9a:a3:
+                    1d:70:21:01:d4:51:86:bb:6b:e1:db:4f:21:66:99:
+                    94:97:50:36:1b:10:3d:95:32:ce:d0:be:cd:5b:49:
+                    5a:4a:3e:a2:8b:3d:70:eb:92:1f:85:ff:8a:41:fa:
+                    2d:9d:34:cd:97:68:87:41:ea:0f:eb:29:48:4f:1f:
+                    a8:70:3d:05:cc:87:98:6a:d8:6f:8e:88:12:8b:e4:
+                    41:b9
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                19:CF:59:D1:4A:32:02:E9:89:28:58:17:EC:BF:39:0E:FC:61:5C:56
+            X509v3 Authority Key Identifier: 
+                keyid:19:CF:59:D1:4A:32:02:E9:89:28:58:17:EC:BF:39:0E:FC:61:5C:56
+
+            X509v3 Basic Constraints: 
+                CA:TRUE
+    Signature Algorithm: sha256WithRSAEncryption
+         bf:ec:ae:20:6d:48:80:f7:cb:bd:fd:60:4a:f0:78:a4:c7:5f:
+         58:fe:9e:f8:8d:7f:3b:12:3e:95:e6:d3:50:96:37:11:3a:d9:
+         1d:f2:a4:81:6a:cb:12:5a:ff:f7:cf:35:2e:00:0e:e5:14:42:
+         54:b8:fb:50:2e:cc:73:1b:ed:8d:84:03:3b:63:28:8a:94:7b:
+         5c:c2:6d:e0:bf:7c:af:66:e3:85:21:a0:56:8d:94:36:40:bb:
+         7a:e9:7f:a8:5f:4c:ff:fd:f6:ba:de:97:26:54:9b:c1:d1:2c:
+         11:2b:b3:24:aa:bb:7a:3c:89:d1:ad:13:36:7d:c0:21:36:f8:
+         bb:91:fc:2f:1d:70:62:dc:dd:2f:d8:49:2e:38:4e:5f:d1:06:
+         58:45:2a:ed:53:68:4b:4c:d5:ac:e0:ec:aa:77:10:cb:da:e1:
+         af:6f:d3:4d:b5:5f:6c:a0:de:b7:91:5c:04:b6:5e:5b:74:4e:
+         1a:a1:f8:74:75:b0:30:1d:83:25:0f:45:68:5c:8c:9c:9a:e1:
+         7e:06:65:0e:ef:e9:99:d2:f9:ce:90:c6:33:19:2e:1b:86:e2:
+         3c:86:8a:a7:cb:bc:80:d7:3c:73:9c:b8:90:a2:11:c7:20:49:
+         53:a1:1d:2f:7a:65:15:ad:68:63:6f:43:06:19:eb:72:ad:73:
+         bb:43:b6:c2
+-----BEGIN CERTIFICATE-----
+MIIDzzCCAregAwIBAgIJANb+XyL+podHMA0GCSqGSIb3DQEBCwUAMH4xCzAJBgNV
+BAYTAkhSMRQwEgYDVQQIDAtHcmFkIFphZ3JlYjEPMA0GA1UEBwwGWmFncmViMREw
+DwYDVQQKDAhOZWJ1bGFEQjEUMBIGA1UEAwwLbmVidWxhZGIuaW8xHzAdBgkqhkiG
+9w0BCQEWEGluZm9AbmVidWxhZGIuaW8wHhcNMTQwMjIxMDAxOTEyWhcNMTQwMzIz
+MDAxOTEyWjB+MQswCQYDVQQGEwJIUjEUMBIGA1UECAwLR3JhZCBaYWdyZWIxDzAN
+BgNVBAcMBlphZ3JlYjERMA8GA1UECgwITmVidWxhREIxFDASBgNVBAMMC25lYnVs
+YWRiLmlvMR8wHQYJKoZIhvcNAQkBFhBpbmZvQG5lYnVsYWRiLmlvMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1XGea2Q5OR5OZfGGMYo/VCqS2x2qqBDU
+qNU2wcO7MhobJ3K8hrW6lhjyTLxGrYvBo/pNBObZcgAjNBLQJq1JV9XEa9mcptvd
+ti4F4DnUHBS2QVDcT0P17Ry+ua3vIZC0RiLONUQLMapIGCCj6VOhx3Xc+ZP/I+fO
+yP8qdF9YmoR2Fx3Q0dqoDNtDqlCxjWWBQEqSbU37nsBaCNxAZZnGfl8u4STi0bIE
+VorAVy+gjdivmqMdcCEB1FGGu2vh208hZpmUl1A2GxA9lTLO0L7NW0laSj6iiz1w
+65Ifhf+KQfotnTTNl2iHQeoP6ylITx+ocD0FzIeYathvjogSi+RBuQIDAQABo1Aw
+TjAdBgNVHQ4EFgQUGc9Z0UoyAumJKFgX7L85DvxhXFYwHwYDVR0jBBgwFoAUGc9Z
+0UoyAumJKFgX7L85DvxhXFYwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOC
+AQEAv+yuIG1IgPfLvf1gSvB4pMdfWP6e+I1/OxI+lebTUJY3ETrZHfKkgWrLElr/
+9881LgAO5RRCVLj7UC7McxvtjYQDO2MoipR7XMJt4L98r2bjhSGgVo2UNkC7eul/
+qF9M//32ut6XJlSbwdEsESuzJKq7ejyJ0a0TNn3AITb4u5H8Lx1wYtzdL9hJLjhO
+X9EGWEUq7VNoS0zVrODsqncQy9rhr2/TTbVfbKDet5FcBLZeW3ROGqH4dHWwMB2D
+JQ9FaFyMnJrhfgZlDu/pmdL5zpDGMxkuG4biPIaKp8u8gNc8c5y4kKIRxyBJU6Ed
+L3plFa1oY29DBhnrcq1zu0O2wg==
+-----END CERTIFICATE-----
