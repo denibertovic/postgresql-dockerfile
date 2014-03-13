@@ -1,4 +1,4 @@
-# PostgreSQL
+# PostgreSQL 9.3
 #
 # VERSION               0.0.1
 
@@ -7,7 +7,7 @@ MAINTAINER Deni Bertovic "deni@kset.org"
 
 # Credentials - !!CHANGE THIS!!
 # This will be used as the password for the postgres user
-ENV PG_SUPER_PASS C3x{m<p;_!qL-q#g{7`mRQ[>mVy_yk
+ENV PG_SUPER_PASS password
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -28,7 +28,9 @@ RUN update-locale en_US.UTF-8
 
 RUN apt-get -qq -y upgrade
 
-RUN apt-get -qq -y install postgresql-9.3 postgresql-client-9.3 postgresql-contrib-9.3 postgresql-plpython-9.3
+RUN apt-get -qq -y install postgresql-9.3 postgresql-client-9.3 postgresql-contrib-9.3 \
+    postgresql-plpython-9.3 postgresql-plperl-9.3 postgresql-9.3-plv8 postgresql-9.3-postgis-2.1 \
+    postgresql-9.3-ip4r postgresql-9.3-postgis-scripts
 
 ADD start_postgres.sh /usr/local/bin/start_postgres.sh
 RUN /bin/chmod 755 /usr/local/bin/start_postgres.sh
