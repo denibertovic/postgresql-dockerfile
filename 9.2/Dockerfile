@@ -1,9 +1,9 @@
 # PostgreSQL 9.2
 #
-# VERSION               0.0.1
+# VERSION               0.0.2
 
 FROM      debian:wheezy
-MAINTAINER Deni Bertovic "deni@kset.org"
+MAINTAINER Deni Bertovic "me@denibertovic.com"
 
 # Credentials - !!CHANGE THIS!!
 # This will be used as the password for the postgres user
@@ -26,8 +26,6 @@ RUN echo 'LANGUAGE="en_US:en"' >> /etc/default/locale
 RUN locale-gen en_US.UTF-8
 RUN update-locale en_US.UTF-8
 
-RUN apt-get -qq -y upgrade
-
 RUN apt-get -qq -y install postgresql-9.2 postgresql-client-9.2 postgresql-contrib-9.2 \
     postgresql-plpython-9.2 postgresql-plperl-9.2 postgresql-9.2-plv8 postgresql-9.2-postgis-2.1 \
     postgresql-9.2-ip4r postgresql-9.2-postgis-scripts
@@ -46,9 +44,7 @@ RUN /bin/chown -R postgres. /etc/postgresql/9.2/main/
 RUN /bin/chmod 600 /etc/postgresql/9.2/main/server.key
 
 # Set required sysctl params and alter Postgres user password
-RUN  echo 'kernel.shmmax=268435456\nkernel.shmall=2097152'>> /etc/sysctl.conf &&\
-        sysctl -p &&\
-        /etc/init.d/postgresql start &&\
+RUN     /etc/init.d/postgresql start &&\
         psql -Upostgres -Upostgres -c"ALTER USER postgres WITH PASSWORD '$PG_SUPER_PASS';"
 
 # Add VOLUMEs to allow backup of config, logs and databases
