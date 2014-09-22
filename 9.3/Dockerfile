@@ -2,7 +2,7 @@
 #
 # VERSION               0.0.2
 
-FROM      debian:jessie
+FROM      debian:wheezy
 MAINTAINER Deni Bertovic "me@denibertovic.com"
 
 # Credentials - !!CHANGE THIS!!
@@ -10,6 +10,10 @@ MAINTAINER Deni Bertovic "me@denibertovic.com"
 ENV PG_SUPER_PASS password
 
 ENV DEBIAN_FRONTEND noninteractive
+
+ADD ACCC4CF8.asc /tmp/ACCC4CF8.asc
+RUN apt-key add /tmp/ACCC4CF8.asc
+RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main" > /etc/apt/sources.list.d/postgresql.list
 
 RUN apt-get -qq update
 RUN apt-get -qq -y install locales
@@ -37,6 +41,8 @@ ADD postgresql.conf /etc/postgresql/9.3/main/
 
 RUN /bin/chown -R postgres. /etc/postgresql/9.3/main/
 RUN /bin/chmod 600 /etc/postgresql/9.3/main/server.key
+
+USER postgres
 
 # Alter Postgres user password
 RUN  /etc/init.d/postgresql start &&\
