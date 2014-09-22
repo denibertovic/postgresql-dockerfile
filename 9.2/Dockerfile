@@ -43,6 +43,8 @@ ADD postgresql.conf /etc/postgresql/9.2/main/
 RUN /bin/chown -R postgres. /etc/postgresql/9.2/main/
 RUN /bin/chmod 600 /etc/postgresql/9.2/main/server.key
 
+USER postgres
+
 # Set required sysctl params and alter Postgres user password
 RUN     /etc/init.d/postgresql start &&\
         psql -Upostgres -Upostgres -c"ALTER USER postgres WITH PASSWORD '$PG_SUPER_PASS';"
