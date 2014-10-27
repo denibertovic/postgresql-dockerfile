@@ -49,10 +49,10 @@ USER postgres
 RUN     /etc/init.d/postgresql start &&\
         psql -Upostgres -Upostgres -c"ALTER USER postgres WITH PASSWORD '$PG_SUPER_PASS';"
 
+RUN chown postgres. /var/lib/postgresql/9.2/main/base
+
 # Add VOLUMEs to allow backup of config, logs and databases
 VOLUME  ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
-
-RUN chown postgres. /var/lib/postgresql/9.2/main/base
 
 EXPOSE 5432
 
