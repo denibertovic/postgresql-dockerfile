@@ -52,7 +52,7 @@ RUN     /etc/init.d/postgresql start &&\
 RUN chown postgres. /var/lib/postgresql/9.2/main/base
 
 # Add VOLUMEs to allow backup of config, logs and databases
-VOLUME  ["/etc/postgresql", "/var/log/postgresql"]
+VOLUME  ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
 
 EXPOSE 5432
 
